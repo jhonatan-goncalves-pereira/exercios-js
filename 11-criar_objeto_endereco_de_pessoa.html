@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Endereco {
+            constructor (rua,bairro,cidade,estado){
+                this.rua = rua;
+                this.bairro = bairro;
+                this.cidade = cidade;
+                this.estado = estado;
+            }
+
+            novaRua(rua){
+                this.rua = rua;
+            }
+
+            //usando set na chamada use - > endereco.novoBairro = "Bairro"
+            set mudouBairro (bairro){
+                this.bairro = bairro;
+            }
+
+            set mudouCidade (cidade){
+                this.cidade = cidade;
+            }
+            set mudouEstado (estado) {
+                this.estado = estado;
+            }
+        }
+        let endereco = new Endereco('Zezin Sã','Manti Queiro','Foi Boa','FB');
+        console.log(endereco);
+
+        endereco.novaRua('Mudou Rua');
+        endereco.mudouBairro = 'Mudou bbairro';
+        endereco.mudouCidade = 'Mudou cidade';
+        endereco.mudouEstado = 'Mudou estado';
+
+        console.log(endereco);
+
+
+
+</script>
+
+</body>
+</html>
