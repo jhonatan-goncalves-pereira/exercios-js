@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let onibus = {
+            rodas:8,
+            limitPassageiros:40,
+            portas:2
+        };
+
+        //acessa_propriedades do obj
+        console.log(onibus.rodas);
+        console.log(onibus.limitPassageiros);
+        console.log(onibus.portas);
+
+        //cria propriedade janelas para o ônibus
+        onibus.janelas = 18;
+        console.log(onibus.janelas);
+
+        //deletar propreidades
+        delete onibus.rodas;
+        console.log(onibus.rodas);
+    </script>
+</body>
+</html>
